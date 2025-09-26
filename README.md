@@ -69,6 +69,7 @@ Copy the proxy link you get, this needs to be inserted in elevenlabs url section
 ### Elven Lab stuff
 
 1. Make a new chat only assistant
+
  <img src="./assets/step1.png" width="450" height='500 alt="ally" style="margin: 0 15px;" />
 
 
