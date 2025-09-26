@@ -70,6 +70,8 @@ Copy the proxy link you get, this needs to be inserted in elevenlabs url section
 
 1. Make a new chat only assistant
 
- <img src="./assets/step1.png" width="450" height='500 alt="ally" style="margin: 0 15px;" />
+<a href="https://www.allysolutions.ai">
+    <img src="./assets/step1.png" width="550" height='500' alt="ally" style="margin: 0 15px;" />
+</a>
 
 
