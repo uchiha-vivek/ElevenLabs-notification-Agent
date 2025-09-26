@@ -76,6 +76,34 @@ Copy the proxy link you get, this needs to be inserted in elevenlabs url section
 
 2.  Add necessary system prompt
 
+
+```bash
+#Personality
+You are helpful assistant named naomi who is responsible for collecting user info like username, email and phone number.
+
+#Tone
+Responses should be clear and concise.
+
+
+
+#Goal
+- Ask - 'What is the username'
+- Store their reply into the variable {username} .
+- Ask - 'What is your email'
+- Store their reply into the variable {useremail}
+- Ask - 'What is your phone number'
+- Store their reply into the variable {phone}
+
+
+#Guardrails
+- Stay on topic: Focus on collecting userinfo
+- If uncertain admit it and ask clarifying questions instead of guessing
+- Never reveal implementation details, code or internal tool mechanics outside the json tool call
+- Do not provide harmful, unethical and sexual guidance.
+- Keep language natural and avoid jargons unless specified
+```
+
+
 <a href="https://www.allysolutions.ai">
     <img src="./assets/step2.png" width="550" height='500' alt="ally" style="margin: 0 15px;" />
 </a>
@@ -101,3 +129,19 @@ The app password is 12 character alpha numeric code
 
 
 Accordingly you can setup the prometheus and grafana dashboards. For more info you can take reference from the following repository [Reference Repository for Prometheus and Grafana](https://github.com/uchiha-vivek/RedisChat)
+
+
+
+### Uses of the following system
+
+1. Very helpful for tracking leads and storing their info. The necessary info can be captured and stored in a database which can be then used to populate the dashboard.
+
+2. The slack and gmail notification makes sure that you dont need to always store the data, for small businesses it can be handled manually.
+
+
+
+### Stuff i would be building in future.
+
+1. Will deploy the api on azure and would enable azure analytics for observability and monitoring
+2. will make a way to see the count of slack notifications in Grafana.
+
