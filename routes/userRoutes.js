@@ -51,39 +51,39 @@ router.post("/save-user", async (req, res) => {
   users.push(newUser);
   userCounter.inc();
 
-  console.log("✅ Received user info:", newUser);
+  console.log("Received user info:", newUser);
 
   // Send Slack notification
   if (SLACK_WEBHOOK_URL) {
     try {
       await axios.post(SLACK_WEBHOOK_URL, {
-        text: `📢 *New User Collected!*
+        text: `*New User Collected!*
 - Username: ${newUser.username}
 - Email: ${newUser.useremail}
 - Phone: ${newUser.phone}
 - Time: ${newUser.timestamp}`,
       });
-      console.log("✅ Sent notification to Slack");
+      console.log("Sent notification to Slack");
     } catch (err) {
-      console.error("❌ Failed to send Slack notification", err.message);
+      console.error("Failed to send Slack notification", err.message);
     }
   }
 
     try {
     await transporter.sendMail({
       from: `"User Notifier" <${process.env.EMAIL_USER}>`,
-      to: "recipient@example.com", // change to your notification recipient
-      subject: "📢 New User Collected",
+      to: "recipient@example.com", 
+      subject: "New User Collected",
       text: `A new user has been collected:\n\nUsername: ${newUser.username}\nEmail: ${newUser.useremail}\nPhone: ${newUser.phone}\nTime: ${newUser.timestamp}`,
-      html: `<h3>📢 New User Collected</h3>
+      html: `<h3> New User Collected</h3>
              <p><b>Username:</b> ${newUser.username}</p>
              <p><b>Email:</b> ${newUser.useremail}</p>
              <p><b>Phone:</b> ${newUser.phone}</p>
              <p><b>Time:</b> ${newUser.timestamp}</p>`,
     });
-    console.log("✅ Email notification sent");
+    console.log("Email notification sent");
   } catch (err) {
-    console.error("❌ Failed to send email notification", err.message);
+    console.error("Failed to send email notification", err.message);
   }
 
 
@@ -94,7 +94,7 @@ router.post("/save-user", async (req, res) => {
   });
 });
 
-// Fetch all users
+
 router.get("/users", (req, res) => {
   res.json({
     count: users.length,
