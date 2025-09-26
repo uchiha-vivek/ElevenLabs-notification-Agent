@@ -60,7 +60,7 @@ After successfull Installation, run the following command
 ngrok http 5000
 ```
 <a href="https://www.allysolutions.ai">
-    <img src="./assets/ngrok.png" width="150" alt="ally" style="margin: 0 15px;" />
+    <img src="./assets/ngrok.png"  width="550" height='500' alt="ally" style="margin: 0 15px;" />
 </a>
 
 Copy the proxy link you get, this needs to be inserted in elevenlabs url section. This proxy link will forward all the requests to localhost:5000
