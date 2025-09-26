@@ -9,15 +9,15 @@ const { userCounter, errorCounter } = require("../metrics/metrics");
 let users = []
 
 
-const SLACK_WEBHOOK_URL="https://hooks.slack.com/services/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"
+const SLACK_WEBHOOK_URL=""
 
 const transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",   
   port: 587,
   secure: false,             
   auth: {
-    user: process.env.EMAIL_USER,  
-    pass: process.env.EMAIL_PASS,  
+    user:"" ,  
+    pass: "",  
   },
 });
 
