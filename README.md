@@ -153,6 +153,7 @@ Accordingly you can setup the prometheus and grafana dashboards. For more info y
 
 2. The slack and gmail notification makes sure that you dont need to always store the data, for small businesses it can be handled manually.
 
+3. Sentiment analysis on the Transcription obtained
 
 
 ### Stuff i would be building in future.
