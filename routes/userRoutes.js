@@ -9,17 +9,21 @@ const { userCounter, errorCounter } = require("../metrics/metrics");
 let users = []
 
 
-const SLACK_WEBHOOK_URL=""
+const SLACK_WEBHOOK_URL="https://hooks.slack.com/services/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"
 
 const transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",   
   port: 587,
   secure: false,             
   auth: {
-    user:"" ,  
+    user:"notifications@allysolutions.ai" ,  
     pass: "",  
   },
 });
+
+
+
+
 
 router.post("/save-user", async (req, res) => {
   const { username, useremail, phone } = req.body;
@@ -72,7 +76,7 @@ router.post("/save-user", async (req, res) => {
     try {
     await transporter.sendMail({
       from: `"User Notifier" <${process.env.EMAIL_USER}>`,
-      to: "recipient@example.com", 
+      to: "viveksharma7497@gmail.com", 
       subject: "New User Collected",
       text: `A new user has been collected:\n\nUsername: ${newUser.username}\nEmail: ${newUser.useremail}\nPhone: ${newUser.phone}\nTime: ${newUser.timestamp}`,
       html: `<h3> New User Collected</h3>

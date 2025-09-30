@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Revive Wellness - Downtown",
+    "address": "123 Main Street, City Center",
+    "phone": "+1 555-123-4567",
+    "hours": "Mon–Fri 9am–7pm, Sat–Sun 10am–5pm"
+  },
+  {
+    "id": 2,
+    "name": "Revive Wellness - Uptown",
+    "address": "456 Oak Avenue, Uptown District",
+    "phone": "+1 555-987-6543",
+    "hours": "Mon–Sat 10am–8pm, Closed Sun"
+  },
+  {
+    "id": 3,
+    "name": "Revive Wellness - Riverside",
+    "address": "789 River Road, Riverside Park",
+    "phone": "+1 555-222-3344",
+    "hours": "Mon–Fri 8am–6pm, Sat 9am–3pm, Closed Sun"
+  },
+  {
+    "id": 4,
+    "name": "Revive Wellness - Midtown",
+    "address": "321 Central Boulevard, Midtown",
+    "phone": "+1 555-444-5566",
+    "hours": "Mon–Sun 10am–9pm"
+  },
+  {
+    "id": 5,
+    "name": "Revive Wellness - Airport",
+    "address": "100 Airport Drive, Terminal 2",
+    "phone": "+1 555-777-8899",
+    "hours": "Open 24/7"
+  }
+]
